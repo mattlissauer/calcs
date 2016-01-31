@@ -15,6 +15,35 @@ window.onload = function() {
 	}
 }
 
+window.onload = function() {
+	// document.getElementsByTagName("input").onkeyup = function() {getPerChange()};
+	function getPerChange () {
+		var valOne = document.getElementById("valOne").value;
+		var valTwo = document.getElementById("valTwo").value;
+		var valResult = ( ( parseInt(valTwo) - parseInt(valOne) ) / parseInt(valOne) ) * 100;
+		console.log(valResult);
+		if (isNaN(valResult)) {
+			document.getElementById("perChangeResult").innerHTML = "Please enter a number"
+		} else {
+			document.getElementById("perChangeResult").innerHTML = valResult;
+		}
+	}
+}
+
+window.onload = function() {
+	document.getElementById("myTemp").onkeyup = function() {getTemp()};
+	function getTemp () {
+		var myTemp = document.getElementById("myTemp").value;
+		var result = ((parseInt(myTemp) - 32) * 5 / 9).toFixed(2);
+		if (isNaN(result)) {
+			document.getElementById("tempcalc").innerHTML = "Please enter a number"
+		} else {
+			document.getElementById("tempcalc").innerHTML = result + "&#176;C";
+		}
+	}
+}
+
+
 // document.getElementById("button").addEventListener()
 
 

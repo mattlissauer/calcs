@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Scripts</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+</head>
+<body>
+	<div class="container">
+		<div class="num-entry">
+			<h2>Calculate Percent Change</h2>
+				<form class="pc-form">
+					1st Value<br>
+					<input id="valOne" height="100" placeholder="Enter first value">
+					<br><br>2nd Value<br>
+					<input id="valTwo" height="100" placeholder="Enter first value">
+					<br><br><button onclick="getPerChange()">Calculate</button>
+				</form>
+				<div class="label">Result</div>
+				<div class="time-result" id="perChangeResult">
+					Result appears here
+				</div>
+		</div>
+	</div>
+
+<!-- onkeyup="getPerChange()" place last in input tag -->
+
+
+</body>
+</html>
