@@ -1,25 +1,38 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Scripts</title>
+	<title>Fahrenheit to Celsius Converter</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-	<script type="text/javascript" src="js/main.js"></script>
+	<script type="text/javascript" src="js/temp.js"></script>
 </head>
 <body>
+	<div class="navigation">
+		<nav>
+			<ul class="nav">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="time.html">Time</a></li>
+				<li><a href="temp.html">Temperature</a></li>
+				<li><a href="percentchange.html">Percent-Change</a></li>
+			</ul>
+		</nav>
+	</div>
 	<div class="container">
 		<div class="num-entry">
-			<h2>Calculate Temperature</h2>
+			<h2>Calculate Temperature in Celsius</h2>
 				<form class="form">
-					Fahrenheit<br>
-					<input id="myTemp" height="100" placeholder="Enter time in mins." onkeyup="getTemp()">
+					Fahrenheit (&#176;F)<br>
+					<input id="myTemp" height="100" placeholder="Enter temp. in &#176;F">
 				</form>
-				<div class="label">Celsius</div>
+				<div class="label">Celsius (&#176;C)</div>
 				<div class="time-result" id="tempcalc">
-					Seconds appears here
+					&#176;C appears here
 				</div>
 		</div>
+		<div class="img"></div>
 	</div>
-
+	<div class="footer">
+		A final project by Matthew Lissauer | WebDev100
+	</div>
 </body>
 </html>

@@ -1,25 +1,39 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Scripts</title>
+	<title>JavaScript Calculators | A Project by Matthew Lissauer</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 	<script type="text/javascript" src="js/main.js"></script>
 </head>
 <body>
-	<div class="container">
-		<div class="num-entry">
-			<h2>Calculate Run-Time</h2>
-				<form class="form">
-					Minutes<br>
-					<input id="runtime" height="100" placeholder="Enter time in mins." onkeyup="getTime()">
-				</form>
-				<div class="label">Seconds</div>
-				<div class="time-result" id="timecalc">
-					Seconds appears here
-				</div>
-		</div>
+	<div class="navigation">
+		<nav>
+			<ul class="nav">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="time.html">Time</a></li>
+				<li><a href="temp.html">Temperature</a></li>
+				<li><a href="percentchange.html">Percent-Change</a></li>
+			</ul>
+		</nav>
 	</div>
-
+	<div class="home-container">
+		<h2>Choose from three handy calculators!</h2>
+			<div class="time-img">
+				<a href="time.html"><img src="images/time.png">
+				<p>Minutes &#8680; Seconds</p></a>
+			</div>
+			<div class="temp-img">
+				<a href="temp.html"><img src="images/temperature.png">
+				<p>Farenheight &#8680; Celcius</p></a>
+			</div>
+			<div class="pc-img">
+				<a href="#"><img src="images/percent-change.png">
+				<p>Percent change of two values</p></a>
+			</div>	
+	</div>
+	<div class="footer">
+		A final project by Matthew Lissauer | WebDev100
+	</div>
 </body>
 </html>

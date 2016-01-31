@@ -1,20 +1,4 @@
-window.onload = function() {
-
-	//document.getElementById('runtime').style.height="200px";
-
-
-	document.getElementById("runtime").onkeyup = function() {getTime()};
-	function getTime () {
-		var runtime = document.getElementById("runtime").value;
-		var result = parseInt(runtime) * 60;
-		if (isNaN(result)) {
-			document.getElementById("timecalc").innerHTML = "Please enter a number"
-		} else {
-			document.getElementById("timecalc").innerHTML = result;
-		}
-	}
-}
-
+// percent change formula = ( (y2 - y1) / y1 ) * 100
 window.onload = function() {
 	// document.getElementsByTagName("input").onkeyup = function() {getPerChange()};
 	function getPerChange () {
@@ -30,18 +14,6 @@ window.onload = function() {
 	}
 }
 
-window.onload = function() {
-	document.getElementById("myTemp").onkeyup = function() {getTemp()};
-	function getTemp () {
-		var myTemp = document.getElementById("myTemp").value;
-		var result = ((parseInt(myTemp) - 32) * 5 / 9).toFixed(2);
-		if (isNaN(result)) {
-			document.getElementById("tempcalc").innerHTML = "Please enter a number"
-		} else {
-			document.getElementById("tempcalc").innerHTML = result + "&#176;C";
-		}
-	}
-}
 
 
 // document.getElementById("button").addEventListener()

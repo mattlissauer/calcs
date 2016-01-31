@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Percent-Change Calculator</title>
+	<title>Minutes to Seconds Converter</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-	<script type="text/javascript" src="js/main.js"></script>
+	<script type="text/javascript" src="js/time.js"></script>
 </head>
-<body>
+<body class="time-body">
 	<div class="navigation">
 		<nav>
 			<ul class="nav">
@@ -16,29 +16,22 @@
 				<li><a href="percentchange.html">Percent-Change</a></li>
 			</ul>
 		</nav>
-	</div>
+	</div>		
 	<div class="container">
 		<div class="num-entry">
-			<h2>Calculate Percent Change</h2>
-				<form class="pc-form">
-					1st Value<br>
-					<input id="valOne" height="100" placeholder="Enter first value">
-					<br><br>2nd Value<br>
-					<input id="valTwo" height="100" placeholder="Enter first value">
-					<br><br><button onclick="getPerChange()">Calculate</button>
+			<h2>Calculate Seconds</h2>
+				<form class="form">
+					Minutes<br>
+					<input id="runtime" height="100" placeholder="Enter time in mins.">
 				</form>
-				<div class="label">Result</div>
-				<div class="time-result" id="perChangeResult">
-					Result appears here
+				<div class="label">Seconds</div>
+				<div class="time-result" id="timecalc">
+					Seconds appears here
 				</div>
 		</div>
 	</div>
 	<div class="footer">
 		A final project by Matthew Lissauer | WebDev100
 	</div>
-
-<!-- onkeyup="getPerChange()" place last in input tag -->
-
-
 </body>
 </html>
