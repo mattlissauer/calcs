@@ -8,10 +8,14 @@ window.onload = function () {
 		} else {
 			document.getElementById("tempcalc").innerHTML = result + "&#176;C";
 		}
-	}
-	if (getTemp < 13) {
-		console.log("This is cold");
-		document.getElementById("img").innerHTML.src = "images/snowflake.png";
-	}
 
+		if (result <= 15) {
+			console.log("This is cold");
+			document.getElementById("emoj").src = "images/snowflake.png";
+		} else {
+			console.log("This is warm");
+			document.getElementById("emoj").src = "images/sun.png";
+		}
+
+	} //end function 
 }
